@@ -32,13 +32,13 @@ function myMenuFunction(){
 
 
 /* ----- TYPING EFFECT ----- */
- var typingEffect = new Typed(".typedText",{
-    strings : ["Administrator", "Designer", "Front End"],
-    loop : true,
-    typeSpeed : 100, 
-    backSpeed : 80,
-    backDelay : 2000
- })
+//  var typingEffect = new Typed(".typedText",{
+//     strings : ["Administrator", "Designer", "Front End"],
+//     loop : true,
+//     typeSpeed : 100, 
+//     backSpeed : 80,
+//     backDelay : 2000
+//  })
 
 
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
@@ -118,20 +118,20 @@ window.addEventListener('scroll', scrollActive)
 
 
 // FORM EMAIL
-function sendEmail(){
+// function sendEmail(){
 
-const myEmail = 'wahidityagilar6@gmail.com' 
-const nama = document.getElementById('nameUser').value
-const email = document.getElementById('emailUser').value
-const text = document.getElementById('text').value
+// const myEmail = 'wahidityagilar6@gmail.com' 
+// const nama = document.getElementById('nameUser').value
+// const email = document.getElementById('emailUser').value
+// const text = document.getElementById('text').value
 
-  Email.send({
-    SecureToken : "7e315b98-4b1c-4a6e-b062-5b9fe82bbafd",
-    To : myEmail,
-    From : email,
-    Subject : nama,
-    Body : text
-}).then(
-  message => alert(message)
-);
-}
+//   Email.send({
+//     SecureToken : "efe3f3f8-600e-4aac-ad94-d35a218d33a3",
+//     To : myEmail,
+//     From : email,
+//     Subject : nama,
+//     Body : text
+// }).then(
+//   message => alert(message)
+// );
+// }
