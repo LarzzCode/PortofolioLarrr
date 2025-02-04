@@ -32,13 +32,13 @@ function myMenuFunction(){
 
 
 /* ----- TYPING EFFECT ----- */
-//  var typingEffect = new Typed(".typedText",{
-//     strings : ["Administrator", "Designer", "Front End"],
-//     loop : true,
-//     typeSpeed : 100, 
-//     backSpeed : 80,
-//     backDelay : 2000
-//  })
+ var typingEffect = new Typed(".typedText",{
+    strings : ["Front End Dev", "Designer", "Social Media Admin"],
+    loop : true,
+    typeSpeed : 100, 
+    backSpeed : 80,
+    backDelay : 2000
+ })
 
 
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
@@ -46,7 +46,7 @@ function myMenuFunction(){
         origin: 'top',
         distance: '80px',
         duration: 2000,
-        reset: true     
+        reset: false     
  })
 
 /* -- HOME -- */
