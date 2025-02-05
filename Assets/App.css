@@ -116,9 +116,15 @@ nav{
    position: relative;
 }
 .nav-name{
-    font-size: 30px;
-    font-weight: 600;
-    color: var(--text-color-third);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-name img{
+    width: 45px;
+    height: 45px;
 }
 .nav-logo span{
     position: absolute;
@@ -443,6 +449,16 @@ h3{
     color: var(--second-color);
 }
 
+/* EXPERIENCE */
+.experience{
+    text-align: center;
+}
+.experience-icon{
+    font-size: 30pt;
+    font-weight: 800;
+}
+
+
 /* ----- CONTACT BOX ----- */
 .contact-info{
     position: relative;
@@ -452,7 +468,8 @@ h3{
     align-items: center;
     padding: 20px 30px;
     width: 100%;
-    height: 315px;
+    text-align: left;
+    height: 550px;
     background: var(--second-color);
     border-radius: 10px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
@@ -466,6 +483,8 @@ h3{
     display: flex;
     align-items: center;
     gap: 10px;
+    text-align: left;
+
     color: var(--color-white);
     margin-block: 5px;
 }
