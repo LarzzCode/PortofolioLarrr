@@ -29,6 +29,7 @@
 /* ----- SMOOTH SCROLL ----- */
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* ----- CHANGE THE SCROLL BAR DESIGN ----- */
@@ -469,7 +470,6 @@ h3{
     padding: 20px 30px;
     width: 100%;
     text-align: left;
-    height: 550px;
     background: var(--second-color);
     border-radius: 10px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
@@ -614,7 +614,9 @@ footer{
     .nav-menu.responsive{
         right: 0;
     }
- 
+    footer {
+        font-size: 15px;
+    }
     .nav-menu{
         position: fixed;
         top: 100px;
