@@ -197,13 +197,6 @@ nav{
     width: 50%;
     padding-left: 20px;
 }
-.featured-text-card span{
-    background: var(--third-color);
-    color: var(--color-white);
-    padding: 3px 8px;
-    font-size: 12px;
-    border-radius: 5px;
-}
 .featured-name p{
     font-size: 30px;
     font-weight: 800;
@@ -397,32 +390,22 @@ h3{
     align-items: center;
     flex-direction: column;
     width: 30%;
-    height: 250px;
     background: var(--color-white);
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
+    padding: 1rem;
 }
-.project-box>i{
-    font-size: 50px;
-    color: #00B5E7;
-    margin-bottom: 25px;
+.project-box iframe {
+    height: 350px;
+    width: 100%;
 }
 .project-box label{
     font-size: 15px;
     color: #777;
 }
-.project-box::after{
-    content: "";
-    position: absolute;
-    bottom: -100%;
-    background: var(--second-color);
-    width: 100%;
-    height: 100%;
-    transition: .4s;
-    z-index: 1;
-}
-.project-box:hover.project-box::after,
+
+
 .contact-info:hover.contact-info::after{
     bottom: 0;
 }
@@ -430,14 +413,7 @@ h3{
     width: 70px;
     height: 70px;
 }
-.project-box:hover.project-box i,
-.project-box:hover.project-box img,
-.project-box:hover.project-box>h3,
-.project-box:hover.project-box>label
-{
-    color: var(--color-white);
-    z-index: 2;
-}
+
 .project-box a{
     background: var(--second-color);
     color: var(--color-white);
@@ -448,11 +424,6 @@ h3{
     outline: none;
     border-radius: 3px;
     border: none;
-}
-.project-box:hover.project-box>a{
-    z-index: 2;
-    background-color: #efefef;
-    color: var(--second-color);
 }
 
 /* EXPERIENCE */
@@ -465,10 +436,6 @@ h3{
 }
 .experience h2{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    gap: 5px;
 } 
 .experience img{
     width: 50px;
@@ -509,6 +476,9 @@ h3{
 .contact-info a{
     text-decoration: none;
     color: var(--color-white);
+}
+.contact-info .item-contact{
+    margin: 5px;
 }
 
 
@@ -599,9 +569,7 @@ footer{
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
-    .featured-text{
-        padding: 0;
-    }
+
     .image, .image img{
         width: 320px;
         height: 320px;
@@ -666,11 +634,12 @@ footer{
         justify-content: center;
         min-height: 150px;
         width: 100%;
-        margin-top: 65px;
+        margin-top: 85px;
     }
     .image, .image img{
-        width: 150px;
-        height: 150px;
+   
+        width: 200px;
+        height: 200px;
     }
     .row{
         display: flex;
