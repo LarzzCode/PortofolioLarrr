@@ -1,0 +1,151 @@
+/* KETERANGAN: Pengaturan Dasar & Font */
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins yang modern */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Latar belakang abu-abu muda yang netral */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    padding: 2rem 5%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* KETERANGAN: Gaya untuk Header dan Navigasi */
+header {
+    background-color: #fff;
+    padding: 1rem 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Menambahkan bayangan agar terlihat elegan */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50; /* Warna biru tua untuk logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 400;
+    transition: color 0.3s ease; /* Efek transisi saat kursor diarahkan */
+}
+
+nav a:hover {
+    color: #3498db; /* Warna berubah menjadi biru saat disentuh kursor */
+}
+
+/* KETERANGAN: Gaya untuk Bagian Hero (Perkenalan) */
+.hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://via.placeholder.com/1500x800'); /* Latar belakang gradien gelap + gambar */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* KETERANGAN: Tombol Call to Action (CTA) */
+.cta-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+/* KETERANGAN: Gaya untuk Bagian Proyek */
+#proyek h2, #tentang-saya h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.proyek-grid {
+    display: grid;
+    /* Membuat layout 3 kolom di layar besar, dan 1 kolom di layar kecil */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.proyek-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; /* Agar gambar tidak keluar dari kotak */
+    transition: transform 0.3s ease;
+}
+
+.proyek-item:hover {
+    transform: translateY(-5px); /* Efek sedikit terangkat saat disentuh kursor */
+}
+
+.proyek-item img {
+    width: 100%;
+    height: auto;
+}
+
+.proyek-item h3, .proyek-item p, .proyek-item a {
+    padding: 0 1.2rem;
+}
+
+.proyek-item a {
+    display: inline-block;
+    margin-bottom: 1.2rem;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 600;
+}
+
+/* KETERANGAN: Gaya untuk Bagian Footer */
+footer {
+    background-color: #2c3e50; /* Warna latar biru tua */
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
