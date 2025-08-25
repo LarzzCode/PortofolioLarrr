@@ -45,6 +45,18 @@
                 </li>
             </ul>
         </div>
+        <!-- <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                </ul>
+        </div>
+ 
+        <div class="nav-button">
+            <i class="uil uil-moon theme-button" id="theme-button"></i>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav> -->
      
         <div class="nav-menu-btn">
             <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -110,22 +122,22 @@
 
        <section class="section" id="projects">
           <div class="top-header">
-              <h1>Website Projects</h1>
+              <h1>Projects</h1>
           </div>
           <div class="project-container">
             <div class="project-box">
                 <iframe src="https://calculator-lar.vercel.app/" frameborder="0"></iframe>
-                <h3>Calculator App</h3>           
+                <h3>Calculator Web App</h3>           
                 <a href="https://calculator-lar.vercel.app/" target="_blank">LIVE DEMO</a>
             </div>
             <div class="project-box">
                 <iframe src="https://lar-movies.vercel.app/" frameborder="0"></iframe>
-                <h3>Movie App</h3>           
+                <h3>Movie Web App</h3>           
                 <a href="https://lar-movies.vercel.app/" target="_blank">LIVE DEMO</a>
             </div>
             <div class="project-box">
                 <iframe src="https://todo-app-lar.vercel.app/" frameborder="0"></iframe>
-                <h3>ToDo App</h3>           
+                <h3>ToDo Web App</h3>           
                 <a href="https://todo-app-lar.vercel.app/" target="_blank">LIVE DEMO</a>
             </div>
             <div class="project-box">
@@ -217,7 +229,7 @@
        </section>
 
     </main>
-
+   
 
     <!-- --------------- FOOTER --------------- -->
     <footer>
@@ -244,11 +256,15 @@
             <a href="https://github.com/LarzzCode" target="_blank"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
         </div>
         <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Gilar Wahiditya Ekaputra</a> - All rights reserved</p>
+            <p>Copyright &copy; <span id="year"> </span> Gilar Wahiditya Eka Putra - All rights reserved</p>
         </div>
     </footer>
     </div>
 
+    <script>
+        // Hanya untuk tahun dinamis di footer (boleh dihapus jika ingin 100% tanpa JS)
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
     <!-- EMAIL JS -->
       <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- ----- TYPING JS Link ----- -->

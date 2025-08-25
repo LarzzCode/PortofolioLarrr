@@ -18,6 +18,51 @@
 
 }
 
+/* ----- DARK THEME ----- */
+/* body.dark-theme{
+    --body-color: rgb(12, 12, 12);
+    --color-white: rgb(30, 30, 30);
+
+    --text-color-second: rgb(220, 220, 220);
+
+    --first-color-hover: rgb(55, 106, 225);
+
+    --first-shadow-color: rgba(255, 255, 255, 0.1);
+} */
+
+/* ----- NAVIGATION BAR DARK THEME ----- */
+/* .dark-theme nav{
+    background: rgba(12, 12, 12, 0.2);
+}
+.dark-theme footer{
+    background: rgba(12, 12, 12, 0.7);
+} */
+
+/* ----- SCROLL BAR DARK THEME ----- */
+/* .dark-theme::-webkit-scrollbar{
+    background: #222;
+}
+.dark-theme::-webkit-scrollbar-thumb{
+    background: #444;
+}
+.dark-theme::-webkit-scrollbar-thumb:hover{
+    background: #555;
+} */
+
+/* ----- THEME BUTTON ----- */
+/* .nav-button{
+    margin-right: 1rem; 
+}
+
+.theme-button{
+    font-size: 1.5rem; 
+    cursor: pointer;
+    transition: .3s;
+}
+
+.theme-button:hover{
+    color: var(--first-color);
+} */
 /* ----- BASE ----- */
 *{
     margin: 0;
@@ -111,7 +156,7 @@ nav{
     backdrop-filter: blur(5px);
     padding-inline: 9vw;
     transition: .3s;
-    z-index: 100;
+    z-index: 999999;
 }
 .nav-logo{
    position: relative;
@@ -126,6 +171,7 @@ nav{
 .nav-name img{
     width: 45px;
     height: 45px;
+    
 }
 .nav-logo span{
     position: absolute;
@@ -206,6 +252,12 @@ nav{
 .typedText{
     text-transform: capitalize;
     color: var(--text-color-third);
+    text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff,
+                0 0 800px #fff;
 }
 .featured-text-info{
     font-size: 15px;
@@ -250,6 +302,7 @@ nav{
     min-height: 100vh;
     width: 50%;
 }
+
 .image{
     margin: auto 0;
     width: 380px;
@@ -257,6 +310,7 @@ nav{
     border-radius: 55% 45% 55% 45%;
     overflow: hidden;
     animation: imgFloat 7s ease-in-out infinite;
+     
 }
 .image img{
     width: 400px;
@@ -585,7 +639,7 @@ footer{
         display: none;
     }
     .nav-menu.responsive{
-        right: 0;
+        right: 10px;
     }
     footer {
         font-size: 15px;
@@ -608,6 +662,8 @@ footer{
     }
     .nav_menu_list{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .nav-menu-btn{
         display: flex;
@@ -637,7 +693,9 @@ footer{
         margin-top: 85px;
     }
     .image, .image img{
-   
+        box-shadow: -1px 3px 87px -7px rgb(167, 166, 166);
+-webkit-box-shadow: -1px 3px 87px -7px rgb(167, 166, 166);
+-moz-box-shadow: -1px 3px 87px -7px rgb(167, 166, 166);
         width: 200px;
         height: 200px;
     }

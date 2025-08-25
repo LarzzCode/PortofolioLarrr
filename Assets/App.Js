@@ -18,14 +18,14 @@ function myMenuFunction(){
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop >  50) {
 
       navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
-      navHeader.style.height = "70px";
-      navHeader.style.lineHeight = "70px";
+      navHeader.style.height = "55px";
+      navHeader.style.lineHeight = "55px";
 
     } else {
 
       navHeader.style.boxShadow = "none";
-      navHeader.style.height = "90px";
-      navHeader.style.lineHeight = "90px";
+      navHeader.style.height = "60px";
+      navHeader.style.lineHeight = "60px";
 
     }
   }
@@ -33,7 +33,7 @@ function myMenuFunction(){
 
 /* ----- TYPING EFFECT ----- */
  var typingEffect = new Typed(".typedText",{
-    strings : ["Front End Dev", "Administration", "Video Grapher", "Graphic Designer"],
+    strings : ["Front End Dev", "Administrator", "Video Grapher", "Graphic Designer"],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
@@ -115,6 +115,39 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive)
+
+/* ----- DARK MODE LOGIC ----- */
+
+// // 1. Ambil elemen yang dibutuhkan
+// const themeButton = document.getElementById('theme-button');
+// const darkTheme = 'dark-theme';
+// const iconTheme = 'uil-sun'; // Ikon untuk mode terang (matahari)
+
+// // 2. Cek tema yang tersimpan di localStorage
+// const selectedTheme = localStorage.getItem('selected-theme');
+// const selectedIcon = localStorage.getItem('selected-icon');
+
+// // 3. Fungsi untuk mendapatkan tema saat ini
+// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+// const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-sun' : 'uil-moon';
+
+// // 4. Terapkan tema yang tersimpan saat halaman dimuat
+// if (selectedTheme) {
+//   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+//   themeButton.classList[selectedIcon === 'uil-sun' ? 'add' : 'remove'](iconTheme);
+// }
+
+// // 5. Tambahkan event listener pada tombol
+// themeButton.addEventListener('click', () => {
+//     // Tambah atau hapus kelas dark-theme dari body
+//     document.body.classList.toggle(darkTheme);
+//     // Ganti ikon bulan/matahari
+//     themeButton.classList.toggle(iconTheme);
+    
+//     // Simpan pilihan pengguna ke localStorage
+//     localStorage.setItem('selected-theme', getCurrentTheme());
+//     localStorage.setItem('selected-icon', getCurrentIcon());
+// });
 
 
 // FORM EMAIL
