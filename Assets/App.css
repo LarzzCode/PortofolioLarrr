@@ -645,6 +645,7 @@ footer{
     }
     footer {
         font-size: 15px;
+        text-align: center;
     }
     .nav-menu{
         position: fixed;
