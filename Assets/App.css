@@ -248,6 +248,7 @@ nav{
     font-weight: 800;
     color: var(--text-color-second);
     margin-block: 20px;
+    z-index: 99999;
 }
 .typedText{
     text-transform: capitalize;
